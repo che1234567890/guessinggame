@@ -1,19 +1,2 @@
-#made by Hanfei Chen
-#the guessing game
-#2023-09-21
-
-import random
-
-def guessing_game():
-    game = True
-    number = random.randint(1, 100) # choose a random number between 1 and 100
-    while game: #sets a loop
-        try:  # incase there is a error in the next block
-          guess = int(input("enter random number between 1 and 100:\n"))
-        except ValueError: # if the error is guess isnt a number return "only enter number"
-            print("only enter numbers")
-        if guess == number: # if player guess equal to the number chosen by the random.randint will break the loop
-            print("Correct!")
-            game = False #break the loop
-
-guessing_game()  # start the game
+for i in range(0, 11): n = 10 - i; c = n*"*"; print(c); import random; z = random.randint(1, 30) #for i in range est utilise car nomme deja la variable et trouve un nombre random 
+while True: question = int(input("entrer votre nombre ")); print("vous avez gagner") if question == z else print("nombre est p plus petit") if z < question else print("nombre est plus grand") #demande un nombre est dit si c'est plus grand ou plus petit
